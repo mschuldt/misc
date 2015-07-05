@@ -1,0 +1,6 @@
+Send commands from Python to C++ using sockets.
+
+The C++ code accepts commands from the socket with format:
+  <command number>:<argument count=N>:<N args...>:
+After receiving a message c++ calls the corresponding
+handler function.
